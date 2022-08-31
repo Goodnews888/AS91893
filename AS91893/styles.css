@@ -1,12 +1,6 @@
 header {
     background-color: black;
-    margin-top: 5px;
-    padding-top: 10px;
     width: 100%;
-}
-
-* {
-    margin: 0
 }
 
 nav {
@@ -49,8 +43,53 @@ nav {
 .Home-p1 {
     text-align: center;
     padding-top: 50px;
+    padding-bottom: 50px;
+    
 }
 
-.Home-p1 p{
-    font-size: 20px
+.chalets {
+    padding-top: 50px;
+
+}
+.grid-container1 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-left: 120px;
+    margin-right: 120px;
+    gap: 200px;
+    color: black;
+}
+
+.grid-container1 > div {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+    overflow: hidden;
+}
+
+.grid-container1 > div > p {
+    font-size: 20px;
+}
+#kereru {
+    width: 100%;
+    max-height: 100%;
+    background-size: cover;
+    background-position: center;
+} 
+
+#pukeko {
+    width: 100%;
+    max-height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+#kakapo {
+    width: 100%;
+    max-height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+* {
+    margin: 0
 }
