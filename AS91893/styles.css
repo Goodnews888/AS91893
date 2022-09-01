@@ -1,5 +1,8 @@
 header {
-    background-color: black;
+
+    background: rgba(31, 63, 160, 0.5);
+    position: fixed;
+    z-index: 2;
     width: 100%;
 }
 
@@ -90,6 +93,35 @@ nav {
     background-size: cover;
     background-position: center;
 }
+
+.signup {
+    background-color: black;
+    text-align: center;
+}
+
+.signup h1{
+    color: white;
+}
+
+.signup > a {
+    display: inline-block;
+}
+
+.button1 {
+    color: black; 
+    background-color: white;
+    font-size: 19px;    
+    margin: 30px 5px;
+    padding: 15px 15px;
+    border: 2px solid #003b63;
+    min-width: 150p;
+    box-shadow: inset 0 0 0 0 #f9e506;
+    transition: ease-out 0.3s;
+    outline: none;
+    text-decoration: none;
+}
+
+
 * {
     margin: 0
 }
