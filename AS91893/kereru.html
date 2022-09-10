@@ -6,6 +6,26 @@
     <meta name = "viewpoint" content = "width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title> Maunga Club </title> 
+    <style>
+      .background {
+        background-image: url(images/mountain_view_dark.jpg);
+        background-size: 100% 100%;
+      }
+      
+      .text {
+        color: white;
+        background-color: rgb(0, 0, 0, 0.5)
+      }
+    
+      .kereru_info img{
+        margin: auto;
+        height: 60%;
+        width: 60%;
+        display: block;
+        padding-top: 20px;
+        padding-bottom: 40px;
+      }
+    </style>
 </head>
 <body>
     <header>
@@ -31,22 +51,22 @@
       <div class="slideshow-container">
         <div class="mySlides fade">
           <div class="numbertext">1 / 4</div>
-          <img src="images/kereru/cabin_exterior.jpg" style="width:100%">
+          <img src="images/kereru/cabin_exterior.jpg" alt = "Kererū cabin exterior" style="width:100%">
           <div class="text">Cabin Exterior</div>
         </div>
         <div class="mySlides fade">
           <div class="numbertext">2 / 4</div>
-          <img src="images/kereru/adult_bedroom.jpg" style="width:100%">
+          <img src="images/kereru/adult_bedroom.jpg" alt = "Kererū adult bedroom" style="width:100%">
           <div class="text">Adult bedroom</div>
         </div>
         <div class="mySlides fade">
           <div class="numbertext">3 / 4</div>
-          <img src="images/kereru/kids_bedroom.jpg" style="width:100%">
+          <img src="images/kereru/kids_bedroom.jpg" alt = "Kererū kids bedroom" style="width:100%">
           <div class="text">Kids bedroom</div>
         </div>
         <div class="mySlides fade">
           <div class="numbertext">4 / 4</div>
-          <img src="images/kereru/kitchen.jpg" style="width:100%">
+          <img src="images/kereru/kitchen.jpg" alt = "Kererū kitchen" style="width:100%">
           <div class="text">Kitchen</div>
         </div>  
           <a class="prev" onclick="plusSlides(-1)">❮</a>
@@ -60,7 +80,7 @@
           <span class="dot" onclick="currentSlide(4)"></span> 
         </div>
         <div class = "kereru_info">
-          <img src = "images/kereru/kereru_info.jpg">
+          <img src = "images/kereru/kereru_info.jpg" alt = "Kererū info">
         </div>  
 
     </main>
@@ -72,53 +92,34 @@
         Inc. 
       </small></p>
     </footer>
-</body>
-<script>
-    let slideIndex = 1;
-    showSlides(slideIndex);
-    
-    function plusSlides(n) {
-      showSlides(slideIndex += n);
-    }
-    
-    function currentSlide(n) {
-      showSlides(slideIndex = n);
-    }
-    
-    function showSlides(n) {
-      let i;
-      let slides = document.getElementsByClassName("mySlides");
-      let dots = document.getElementsByClassName("dot");
-      if (n > slides.length) {slideIndex = 1}    
-      if (n < 1) {slideIndex = slides.length}
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";  
-      }
-      for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-      }
-      slides[slideIndex-1].style.display = "block";  
-      dots[slideIndex-1].className += " active";
-    }
-</script>
 
-<style>
-  .background {
-    background-image: url(images/mountain_view_dark.jpg);
-    background-size: 100% 100%;
-  }
-  
-  .text {
-    color: white;
-    background-color: rgb(0, 0, 0, 0.5)
-  }
-  
-  .kereru_info img{
-    margin: auto;
-    height: 60%;
-    width: 60%;
-    display: block;
-    padding-top: 20px;
-    padding-bottom: 40px;
-  }
-</style>
+    <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+      
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+      
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+      
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+      }
+      </script>
+</body>
+
