@@ -18,7 +18,7 @@ nav {
 .button {
   color: white;
   font-size: 24px; 
-  font-family: Arial, Helvetica, sans-serif; 
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: bold;
   border: 2px solid white;
   padding: 10px 20px;
@@ -48,7 +48,7 @@ nav {
     position: absolute;
     font-size: 80px;
     font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif; 
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     top:300px;
     right:200px;
 }
@@ -61,7 +61,6 @@ nav {
     padding-top: 100px;
     padding-bottom: 400px;
     background-image: url(images/mountain_view_light.jpg);
-  
     max-width: 100%;
     max-height: 100%;
     
@@ -148,10 +147,14 @@ nav {
     text-align: center;
     padding: 20px 0;
     font-size: 30px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .grid-container1 > div > p {
     font-size: 20px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    
 }
 #kereru {
     width: 100%;
@@ -178,7 +181,7 @@ nav {
 }
 
 .signup {
-    background-color: black;
+    background-color: rgb(13, 26, 63);
     text-align: center;
     padding-top: 20px;
 }
@@ -191,19 +194,7 @@ nav {
     display: inline-block;
 }
 
-.button1 {
-    color: black; 
-    background-color: white;
-    font-size: 19px;    
-    margin: 30px 5px;
-    padding: 15px 15px;
-    border: 2px solid #003b63;
-    box-shadow: inset 0 0 0 0 #f9e506;
-    transition: ease-out 0.3s;
-    outline: none;
-    text-decoration: none;
-    border-radius: 8px;
-}
+
 
 .wrapper {
   margin-left:auto;
@@ -212,14 +203,24 @@ nav {
 
 .chalet-intro {
   font-size: 40px;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   text-align: center;
-  padding-top: 150px;
+  padding-top: 200px;
+  padding-bottom: 50px;
 }
 
+.chalet-intro p{
+  border: rgb(255, 255, 255, 0.6);
+  border-radius: 4px;
+  background-color:  rgb(255, 255, 255, 0.3);
+  width: fit-content;
+  margin: auto;
+  
+}
 
 /* Creating slideshow for images */
 * {box-sizing: border-box}
-body {font-family: Verdana, sans-serif; margin:0}
+body {font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; margin:0}
 .mySlides {display: none}
 img {vertical-align: middle;}
 
@@ -228,6 +229,8 @@ img {vertical-align: middle;}
   max-width: 1000px;
   position: relative;
   margin: auto;
+
+
 }
 
 /* Next & previous buttons */
@@ -240,6 +243,7 @@ img {vertical-align: middle;}
   margin-top: -22px;
   color: white;
   font-weight: bold;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 18px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
@@ -261,6 +265,7 @@ img {vertical-align: middle;}
 .text {
   color: #f2f2f2;
   font-size: 15px;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   padding: 8px 12px;
   position: absolute;
   bottom: 8px;
@@ -272,6 +277,7 @@ img {vertical-align: middle;}
 .numbertext {
   color: #f2f2f2;
   font-size: 12px;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   padding: 8px 12px;
   position: absolute;
   top: 0;

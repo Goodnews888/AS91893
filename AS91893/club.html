@@ -25,7 +25,16 @@
     <main>
       <img id = "homepage" src = "images/mountain_view_dark.jpg" style = "width:100%;">
         <div class ="signup">
+          
             <form>
+              <p> Maunga Club Membership</p>
+              <div class = "pbox">
+                <p1> To be able to access the chalets we have to offer, you need to join the Maunga Club Membership. <br>
+                Fill in the information below and we'll confirm your registration. <br>
+                Once we confirm your email address, we will send you additional information about the<br>
+                Club and accomodation (membership letter) via regular email. <br>
+              </div>
+              </p1>
               <label class = "Labels" for="fname">First Name</label>
               <input type="text" id="fname" name="firstname" placeholder="Your First Name..">
               
@@ -47,8 +56,11 @@
     </main>
 
     <footer>
-
-
+      <p><small>
+        &copy; Maunga Club
+        2019 - Website by Web Makers 
+        Inc. 
+      </small></p>
     </footer>
 </body>
 
@@ -82,6 +94,7 @@
     .signup {
       border-radius: 5px;
       background-color: #f2f2f2;
+      
       padding: 20px;
       width: 50%;
       left: 25%;
@@ -91,16 +104,38 @@
       position: absolute;
       background-image: url(images/mountain_view_light.jpg);
       background-size: cover;
+    
   
     }
 
     .Labels {
-      border: 5px darkgreen solid;
-      background-color: white;
-      border-radius: 4px;
+      background-color: rgba(136, 129, 129, 0.8);
       font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
       padding-left: 10px;
       padding-right: 10px;
+
+      
     }
+    
+    
+  
+    .signup p{
+      font-size: 30px;
+      font-weight: bold;
+      border: 20px rgb(255, 255, 255, 0.8);
+      border-radius: 4px;
+      background-color:  rgb(255, 255, 255, 0.8);
+      font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    .pbox {
+      border: 20px rgb(255, 255, 255, 0.8);
+      border-radius: 4px;
+      background-color:  rgb(255, 255, 255, 0.8);
+      margin-bottom: 20px;
+      font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    }
+  
     
     </style>

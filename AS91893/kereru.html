@@ -23,7 +23,7 @@
     </header>
 
     
-    <main>
+    <main class = 'background'>
       <div class="chalet-intro">
         <p>Kererū Gallery</p>
       </div>
@@ -37,17 +37,17 @@
         <div class="mySlides fade">
           <div class="numbertext">2 / 4</div>
           <img src="images/kereru/adult_bedroom.jpg" style="width:100%">
-          <div class="text">Caption Two</div>
+          <div class="text">Adult bedroom</div>
         </div>
         <div class="mySlides fade">
           <div class="numbertext">3 / 4</div>
           <img src="images/kereru/kids_bedroom.jpg" style="width:100%">
-          <div class="text">Caption Three</div>
+          <div class="text">Kids bedroom</div>
         </div>
         <div class="mySlides fade">
           <div class="numbertext">4 / 4</div>
           <img src="images/kereru/kitchen.jpg" style="width:100%">
-          <div class="text">Caption Four</div>
+          <div class="text">Kitchen</div>
         </div>  
           <a class="prev" onclick="plusSlides(-1)">❮</a>
           <a class="next" onclick="plusSlides(1)">❯</a>
@@ -59,12 +59,18 @@
           <span class="dot" onclick="currentSlide(3)"></span> 
           <span class="dot" onclick="currentSlide(4)"></span> 
         </div>
+        <div class = "kereru_info">
+          <img src = "images/kereru/kereru_info.jpg">
+        </div>  
 
     </main>
 
     <footer>
-
-
+      <p><small>
+        &copy; Maunga Club
+        2019 - Website by Web Makers 
+        Inc. 
+      </small></p>
     </footer>
 </body>
 <script>
@@ -95,3 +101,24 @@
       dots[slideIndex-1].className += " active";
     }
 </script>
+
+<style>
+  .background {
+    background-image: url(images/mountain_view_dark.jpg);
+    background-size: 100% 100%;
+  }
+  
+  .text {
+    color: white;
+    background-color: rgb(0, 0, 0, 0.5)
+  }
+  
+  .kereru_info img{
+    margin: auto;
+    height: 60%;
+    width: 60%;
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
+</style>
