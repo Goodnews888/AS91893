@@ -10,19 +10,55 @@
 <body>
     <header>
         <div class = 'parent'>
-            <img src="images/Maunga_Club_white.png" alt ="Maunga Club logo" id = "MaungaClubLogo">
+            <a href = "home.html">
+                <img src="images/Maunga_Club_white.png" alt ="Maunga Club logo" id = "MaungaClubLogo" >
+            </a>
             <nav>
-                <a href="home.html" class = "button">Home</a>
-                <a href="kakapo.html" class = "button">Kakapo</a>
-                <a href="kereru.html" class = "button">Kereru</a>
-                <a href="pukeko.html" class = "button">Pukeko</a>
+                <a href="kakapo.html" class = "button">Kākāpo</a>
+                <a href="kereru.html" class = "button">Kererū</a>
+                <a href="pukeko.html" class = "button">Pūkeko</a>
                 <a href="club.html" class = "button">Join Club</a>
             </nav>
         </div>
     </header>
 
+    
     <main>
-
+      <div class="chalet-intro">
+        <p>Kererū Gallery</p>
+      </div>
+      <br>
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 4</div>
+          <img src="images/kereru/cabin_exterior.jpg" style="width:100%">
+          <div class="text">Cabin Exterior</div>
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 4</div>
+          <img src="images/kereru/adult_bedroom.jpg" style="width:100%">
+          <div class="text">Caption Two</div>
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 4</div>
+          <img src="images/kereru/kids_bedroom.jpg" style="width:100%">
+          <div class="text">Caption Three</div>
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">4 / 4</div>
+          <img src="images/kereru/kitchen.jpg" style="width:100%">
+          <div class="text">Caption Four</div>
+        </div>  
+          <a class="prev" onclick="plusSlides(-1)">❮</a>
+          <a class="next" onclick="plusSlides(1)">❯</a>
+      </div>
+        <br>
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+          <span class="dot" onclick="currentSlide(4)"></span> 
+        </div>
 
     </main>
 
@@ -31,3 +67,31 @@
 
     </footer>
 </body>
+<script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+</script>
